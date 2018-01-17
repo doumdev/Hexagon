@@ -19,12 +19,12 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 // MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(2000000000000000);
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
-const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 1;
-const size_t ZAWY_DIFFICULTY_V2                              = 1;
+const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 100;
+const size_t ZAWY_DIFFICULTY_V2                              = 0;
 const size_t ZAWY_DIFFICULTY_V3                              = 0;
 const size_t ZAWY_DIFFICULTY_V4                              = 0;
 const uint8_t ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION       = 1;
-const unsigned EMISSION_SPEED_FACTOR                         = 18;
+const unsigned EMISSION_SPEED_FACTOR                         = 21;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
@@ -68,7 +68,7 @@ const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 1;
 const uint32_t HEXAGON_REWARD_ADJUSTMENT_BLOCK               = 1;
 
-const uint32_t UPGRADE_HEIGHT_V2                             = 48000;
+const uint32_t UPGRADE_HEIGHT_V2                             = 100;
 const uint32_t UPGRADE_HEIGHT_V3                             = 99999999;
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
 const uint32_t UPGRADE_VOTING_WINDOW                         = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
@@ -131,6 +131,3 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
 } // Hexagon Constants & Configuration
 
 #define ALLOW_DEBUG_COMMANDS
-
-
-
