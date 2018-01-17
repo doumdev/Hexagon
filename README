@@ -1,0 +1,4 @@
+# Hexagon
+
+To build for Linux, you require libboost-all-dev and cmake.
+To build for Windows, you require boost and cmake.
